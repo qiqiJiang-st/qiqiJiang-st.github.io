@@ -75,4 +75,57 @@ since I started this blog in the C2, and I don't have much time to review the pr
 
 	`crop`  the images to fit a square shape of the size requested, using the full width or height. This can result in losing some important details. Alternatively, you can ask fastai to pad the images with zeros (black), or squish/stretch them;
 
+15.What is data augmentation? Why is it needed?
 
+	`Data augmentation` refers to creating random variations of our input data, such that they appear different, but do not actually change the meaning of the data. Examples of common data augmentation techniques for images are rotation, flipping, perspective warping, brightness changes and contrast changes.
+
+16.What is the difference between  `item_tfms`  and  `batch_tfms`?
+
+	 item_tfms put the transforms on a single image,while batch_tsfm is on a batch size if images, because the transform function remains the same for every image, so we will have a speed promotion when using batch_tsfm on GPU.
+
+17.What is a confusion matrix?
+
+	something throught which you can have a insight of how many category is correctly classified and incorrectly classified.
+
+18.What does  `export`  save?
+
+	the *architecture* and the trained *parameters*
+
+19.What is it called when we use a model for getting predictions, instead of training?
+
+	When we use a model for getting predictions, instead of training, we call it *inference*. 
+
+20.What are IPython widgets?
+
+	*IPython widgets* are GUI components that bring together JavaScript and Python functionality in a web browser, and can be created and used within a Jupyter notebook.
+
+21.When might you want to use CPU for deployment? When might GPU be better?
+
+	As we've seen, GPUs are only useful when they do lots of identical work in parallel. If you're doing (say) image classification, then you'll normally be classifying just one user's image at a time, and there isn't normally enough work to do in a single image to keep a GPU busy for long enough for it to be very efficient. So, a CPU will often be more cost-effective.
+	An alternative could be to wait for a few users to submit their images, and then batch them up and process them all at once on a GPU. But then you're asking your users to wait, rather than getting answers straight away!
+
+22.What are the downsides of deploying your app to a server, instead of to a client (or edge) device such as a phone or PC?
+	
+	There are downsides too, of course. Your application will require a network connection, and there will be some latency each time the model is called. (It takes a while for a neural network model to run anyway, so this additional network latency may not make a big difference to your users in practice. In fact, since you can use better hardware on the server, the overall latency may even be less than if it were running locally!) Also, if your application uses sensitive data then your users may be concerned about an approach which sends that data to a remote server, so sometimes privacy considerations will mean that you need to run the model on the edge device (it may be possible to avoid this by having an *on-premise* server, such as inside a company's firewall). Managing the complexity and scaling the server can create additional overhead too, whereas if your model runs on the edge devices then each user is bringing their own compute resources, which leads to easier scaling with an increasing number of users (also known as *horizontal scaling*)
+
+23.What are three examples of problems that could occur when rolling out a bear warning system in practice?What is "out-of-domain data"?What is "domain shift"?
+
+	out-of-domain data:
+	Working with video data instead of images
+	Handling nighttime images, which may not appear in this dataset
+	Dealing with low-resolution camera images
+	Ensuring results are returned fast enough to be useful in practice
+	Recognizing bears in positions that are rarely seen in photos that people post online (for example from behind, partially covered by bushes, or when a long way away from the camera)
+	
+	domain shift:
+	as time pass by,the original training data is no longer  representive under the latest situation
+
+
+24.What are the three steps in the deployment process?
+
+	first step is to use an entirely manual process, with your deep learning model approach running in parallel but not being used directly to drive any actions.
+	The second step is to try to limit the scope of the model, and have it carefully supervised by people.
+	Then, gradually increase the scope of your rollout. 
+
+
+	
