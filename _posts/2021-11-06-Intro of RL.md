@@ -1,6 +1,3 @@
----
-typora-root-url: ..\images
----
 
 # 第一讲：强化学习基本介绍
 ## 多领域交叉
@@ -84,7 +81,7 @@ typora-root-url: ..\images
 
 一个智能体需要从环境接收两种信息：观察信息$O_t$和奖励信息$R_t$，输出一个行动$A_t$​，作用于环境
 
-![](agent_and_env.jpg)
+![](images/agent_and_env.jpg)
 
 环境受到行动的影响后，又产生$O_{t+1}$和$R_{t+1}$​​，输入到智能体中。
 
@@ -120,7 +117,7 @@ $$
 
 通常来说，环境状态对于智能体是不可见的。就算可见，它当中也可能包含了一些不相关的信息。
 
-![env state](env state.jpg)
+![env state](images\env state.jpg)
 
 ## 智能体状态 - Agent State
 
@@ -132,7 +129,7 @@ $$
 $$
 S_t^a = f(H_t)
 $$
-![agent state](agent state.jpg)
+![agent state](images\agent state.jpg)
 
 ### 信息状态 - Information State
 
@@ -177,7 +174,7 @@ $$
 
 - 正规的，这就是一个==马尔科夫决策过程==
 
-![full oberavation](full o.jpg)
+![full oberavation](images\full o.jpg)
 
 ### 部分观测环境 - Partially Observable Environments
 
@@ -243,19 +240,19 @@ $$
 
 状态：智能体的位置
 
-![maze example](maze eg.jpg)
+![maze example](images\maze eg.jpg)
 
 #### 策略
 
 箭头代表每个状态对应的策略$\pi(s)$
 
-![maze policy](maze policy.jpg)
+![maze policy](images\maze policy.jpg)
 
 #### 值函数
 
 数字代表每个状态对应的值函数$v_\pi(s)$
 
-![maze value function](maze value f.jpg)
+![maze value function](images\maze value f.jpg)
 
 每次选择值函数最大的行动
 
@@ -266,7 +263,7 @@ $$
 - 动态：行动如何改变环境
 - 奖励：每种状态有多少奖励
 
-![maze model](maze model.jpg)
+![maze model](images\maze model.jpg)
 
 
 
@@ -300,7 +297,7 @@ $$
 
 ### 强化学习智能体的分类 
 
-![RL Agent Taxonomy](RL Agent Taxonomy.jpg)
+![RL Agent Taxonomy](images\RL Agent Taxonomy.jpg)
 
 大多数情况下，值函数都包含了策略
 
@@ -329,7 +326,7 @@ $$
 
 游戏的规则是未知的，智能体通过直接玩游戏来学习，从操纵杆选择行动，观测像素和得分
 
-![Atari Example Reinforcement Learning](Atari Example Reinforcement Learning.jpg)
+![Atari Example Reinforcement Learning](images\Atari Example Reinforcement Learning.jpg)
 
 ### Atari例子：规划
 
@@ -337,7 +334,7 @@ $$
 
 提前规划来寻找最优策略，比如：树搜索
 
-![tree search](tree search.jpg)
+![tree search](images\tree search.jpg)
 
 
 
@@ -379,7 +376,7 @@ $$
 
 均匀随机策略的值函数是什么？
 
-![Gridworld Example - Contro](Gridworld Example - Contro.jpg)
+![Gridworld Example - Contro](images\Gridworld Example - Contro.jpg)
 
 
 
@@ -389,7 +386,7 @@ $$
 
 最优策略是什么？
 
-![Gridworld Example - Control](Gridworld Example - Control.jpg)
+![Gridworld Example - Control](images\Gridworld Example - Control.jpg)
 
 
 
