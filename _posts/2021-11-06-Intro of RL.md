@@ -81,8 +81,8 @@
 
 一个智能体需要从环境接收两种信息：观察信息$O_t$和奖励信息$R_t$，输出一个行动$A_t$，作用于环境
 
-![](https://qiqijiang-st.github.io/images/agent_and_env.jpg)
-
+![](/images/agent_and_env.jpg)
+![](/images/logo.png "fast.ai's logo")
 
 环境受到行动的影响后，又产生$O_{t+1}$和$R_{t+1}$，输入到智能体中。
 
