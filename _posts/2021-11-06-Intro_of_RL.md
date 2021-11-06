@@ -110,7 +110,7 @@ $$
 
 通常来说，环境状态对于智能体是不可见的。就算可见，它当中也可能包含了一些不相关的信息。
 
-![](../images/env_state.jpg)
+![](https://github.com/qiqiJiang-st/qiqiJiang-st.github.io/blob/master/images/env_state.jpg "environment state")
 
 ## 智能体状态 - Agent State
 
@@ -122,8 +122,9 @@ $$
 $$
 S_t^a = f(H_t)
 $$
+
 ![agent state](../images/agent_state.jpg)
-![](../images/logo.png)
+
 ### 信息状态 - Information State
 
 信息状态（也即`马尔科夫状态`）包含了历史中所有的有用信息。
