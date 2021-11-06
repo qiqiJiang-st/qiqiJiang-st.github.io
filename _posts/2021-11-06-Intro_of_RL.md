@@ -123,7 +123,7 @@ $$
 S_t^a = f(H_t)
 $$
 ![agent state](../images/agent_state.jpg)
-
+![](../images/logo.png)
 ### 信息状态 - Information State
 
 信息状态（也即`马尔科夫状态`）包含了历史中所有的有用信息。
