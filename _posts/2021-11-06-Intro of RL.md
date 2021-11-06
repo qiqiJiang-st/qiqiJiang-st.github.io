@@ -79,15 +79,8 @@
 
 ## 环境
 
-一个智能体需要从环境接收两种信息：观察信息$O_t$和奖励信息$R_t$，输出一个行动$A_t$，作用于环境
-
-![](/images/agent_and_env.jpg)
-![](/images/logo.png "fast.ai's logo")
-
-环境受到行动的影响后，又产生$O_{t+1}$和$R_{t+1}$，输入到智能体中。
-
-
-
+一个智能体需要从环境接收两种信息：观察信息$O_t$和奖励信息$R_t$，输出一个行动$A_t$，作用于环境，环境受到行动的影响后，又产生$O_{t+1}$和$R_{t+1}$，输入到智能体中。
+![](../images/logo.png)
 ## 状态 - State
 
 ### 历史和状态
@@ -118,7 +111,7 @@ $$
 
 通常来说，环境状态对于智能体是不可见的。就算可见，它当中也可能包含了一些不相关的信息。
 
-![env state](../images/env_state.jpg)
+![](../images/env_state.jpg)
 
 ## 智能体状态 - Agent State
 
@@ -327,7 +320,7 @@ $$
 
 游戏的规则是未知的，智能体通过直接玩游戏来学习，从操纵杆选择行动，观测像素和得分
 
-![Atari Example Reinforcement Learning](../images/Atari_Example_Reinforcement_Learning.jpg)
+![](../images/Atari_Example_Reinforcement_Learning.jpg "Atari Example Reinforcement Learning")
 
 ### Atari例子：规划
 
@@ -335,7 +328,7 @@ $$
 
 提前规划来寻找最优策略，比如：树搜索
 
-![tree search](../images/tree_search.jpg)
+![](../images/tree_search.jpg "tree search")
 
 
 
